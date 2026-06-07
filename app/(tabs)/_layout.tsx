@@ -7,12 +7,12 @@ export default function TabLayout() {
         screenOptions={{
             tabBarActiveTintColor: '#68D9E3',
             headerStyle: {
-                backgroundColor: '#32425C'
+                backgroundColor: '#152440'
             },
             headerShadowVisible: false,
             headerTintColor: '#68D9E3',
             tabBarStyle: {
-                backgroundColor: '#32425C',
+                backgroundColor: '#152440',
             },
         }}
     >  
@@ -28,6 +28,13 @@ export default function TabLayout() {
             options={{
                 title: "About",
                 tabBarIcon: ({ color, focused }) => (<Ionicons name={focused ? "information-circle" : "information-circle-outline"} size={24} color={color} />),
+            }}
+        />
+        <Tabs.Screen
+            name="topic-selection"
+            options={{
+                title: "Topic Selection",
+                tabBarIcon: ({ color, focused }) => (<Ionicons name={focused ? "list" : "list-outline"} size={24} color={color} />),
             }}
         />
     </Tabs>

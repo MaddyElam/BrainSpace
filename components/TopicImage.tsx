@@ -8,13 +8,13 @@ type Props = {
 
 export default function TopicImage({imgSource, topicImage}: Props) {
   const imageSource = topicImage ? { uri: topicImage } : imgSource;
-  return <Image source={imageSource} style={styles.image} />;
+  return <Image source={imageSource} style={styles.image} contentFit="contain"/>;
 }
 
 const styles = StyleSheet.create({
     image: {
-        width: 320,
-        height: 440,
+        width: '100%',
+        height: '100%',
         borderRadius: 18,
     },
 })
